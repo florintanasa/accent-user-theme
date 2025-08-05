@@ -3,7 +3,7 @@ It is a Gnome extension that changes the user's theme based on the accent color 
 The extension is a modification of the [Accent Color Icon Theme Changer For GNOME](https://github.com/taiwbi/gnome-accent-directories) extension, thank you `Mohammad Mahdi Tayebi` for your work.  
 This extension is included in **BRGV-OS** Linux distribution.  
 
-![Accent User Theme](../screenshots/accent_user_theme.png)  
+![Accent User Theme](./screenshots/accent_user_theme.png)  
   
 ## What is necessary ...
 Is necessary to have [User Themes](https://extensions.gnome.org/extension/19/user-themes/) installed, thank you `@fmuellner` for your work.  
