@@ -17,7 +17,6 @@
  */
 import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 import Gio from 'gi://Gio';
-const GLib = imports.gi.GLib;
 
 export default class AccentColorUserThemeExtension extends Extension {
     // some declarations
@@ -78,6 +77,10 @@ export default class AccentColorUserThemeExtension extends Extension {
         if (this._settings && this._accentColorChangedId) {
             this._settings.disconnect(this._accentColorChangedId);
             this._accentColorChangedId = 0;
+        }
+        if(this._settings && this._colorSchemeChangedId) {
+            this._settings.disconnect(this._colorSchemeChangedId);
+            this._colorSchemeChangedId = 0;
         }
         // Clear the userThemes array
         this.userThemesLight = [];
